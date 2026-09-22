@@ -27,7 +27,7 @@ from extract_invirant.net import net
 # 4090: 14G
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--checkpoint", default='./checkpoints/My-Checkpoint1.ckpt', type=str)
+parser.add_argument("--checkpoint", default='./checkpoints/My-Checkpoint(ours_new).ckpt', type=str)
 parser.add_argument("--same_folder", default='output', type=str)
 parser.add_argument("--input_folder", default='test_data', type=str)
 

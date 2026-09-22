@@ -20,7 +20,7 @@ CDRDiff/
 ├── models/
 │   └── control_sd15_ini.ckpt
 ├── checkpoints/
-│   ├── My-Checkpoint1.ckpt
+│   ├── My-Checkpoint(ours_new).ckpt
 │   ├── generatorTrain_epoch_5.pth
 │   └── main-epoch=00-step=7000.ckpt
 └── empty_embedding.pkl
@@ -33,7 +33,7 @@ The checkpoints must be obtained separately. The repository already includes `em
 Place the input images in `test_data`, then run the following command from the repository root:
 
 ```bash
-python my_test.py --input_folder ./test_data --same_folder ./output --checkpoint ./checkpoints/My-Checkpoint1.ckpt
+python my_test.py --input_folder ./test_data --same_folder ./output --checkpoint "./checkpoints/My-Checkpoint(ours_new).ckpt"
 ```
 
 Enhanced images are saved to `output`. Images with existing output files are skipped.
@@ -41,7 +41,7 @@ Enhanced images are saved to `output`. Images with existing output files are ski
 To compute PSNR and SSIM, place the normal-light reference images in `reference_images`, using the same filenames as the corresponding input images, then run:
 
 ```bash
-python my_test.py --input_folder ./test_data --gt_folder ./reference_images --same_folder ./output_eval --checkpoint ./checkpoints/My-Checkpoint1.ckpt
+python my_test.py --input_folder ./test_data --gt_folder ./reference_images --same_folder ./output_eval --checkpoint "./checkpoints/My-Checkpoint(ours_new).ckpt"
 ```
 
 Without `--gt_folder`, the script generates enhanced images without computing PSNR or SSIM. Leave `--save_memory` disabled (the default).
