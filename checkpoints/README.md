@@ -9,4 +9,6 @@ Weights are not included in Git. Place the matching files here:
 Also place `control_sd15_ini.ckpt` in `../models/`.
 These files must match the architecture in this repository. The original QuadPrior
 checkpoint is not a verified replacement for the customized ControlNet checkpoint.
-Obtain the customized weights from the repository owner; no download URL is configured.
+Download the three files listed above from [Baidu Netdisk](https://pan.baidu.com/s/1NlQwiE69ySTulql6a_FRtQ?pwd=4mvd) (extraction code: `4mvd`).
+
+For `control_sd15_ini.ckpt`, use the [official QuadPrior Google Drive folder](https://drive.google.com/drive/folders/1NbqfOJYjv-_zH1NzTaaLmZDKjYA9clbd?usp=drive_link). This is a ControlNet initialization checkpoint based on SD 1.5, not a renamed standard SD 1.5 checkpoint.

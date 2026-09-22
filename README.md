@@ -26,7 +26,11 @@ CDRDiff/
 └── empty_embedding.pkl
 ```
 
-The checkpoints must be obtained separately. The repository already includes `empty_embedding.pkl`; keep it in the repository root.
+Download `My-Checkpoint(ours_new).ckpt`, `generatorTrain_epoch_10.pth`, and `main-epoch=00-step=7000.ckpt` from [Baidu Netdisk](https://pan.baidu.com/s/1NlQwiE69ySTulql6a_FRtQ?pwd=4mvd) (extraction code: `4mvd`) and place them in `checkpoints/`.
+
+Download `control_sd15_ini.ckpt` from the [QuadPrior checkpoint folder on Google Drive](https://drive.google.com/drive/folders/1NbqfOJYjv-_zH1NzTaaLmZDKjYA9clbd?usp=drive_link), linked in the [official QuadPrior repository](https://github.com/daooshee/QuadPrior#0-preparation), and place it in `models/`. This is a ControlNet initialization checkpoint based on Stable Diffusion 1.5; a standard SD 1.5 checkpoint cannot be substituted by simply renaming it.
+
+The repository already includes `empty_embedding.pkl`; keep it in the repository root.
 
 ## Testing
 
