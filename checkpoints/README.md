@@ -3,7 +3,7 @@
 Weights are not included in Git. Place the matching files here:
 
 - `My-Checkpoint(ours_new).ckpt`: customized ControlNet checkpoint; keys use `module.control_model.`.
-- `generatorTrain_epoch_5.pth`: decomposition network used by both the prior and inference entry point.
+- `generatorTrain_epoch_10.pth`: decomposition network used by both the prior and inference entry point.
 - `main-epoch=00-step=7000.ckpt`: bypass decoder checkpoint.
 
 Also place `control_sd15_ini.ckpt` in `../models/`.

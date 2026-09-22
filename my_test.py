@@ -156,7 +156,7 @@ if __name__ == '__main__':
     #     param.requires_grad = False
 
     enhanced_net = net().cuda()
-    enhanced_net.load_state_dict(torch.load('./checkpoints/generatorTrain_epoch_5.pth'))
+    enhanced_net.load_state_dict(torch.load('./checkpoints/generatorTrain_epoch_10.pth'))
     enhanced_net = enhanced_net.to(torch.float16)
     for param in enhanced_net.parameters():
         param.requires_grad = False

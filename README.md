@@ -21,7 +21,7 @@ CDRDiff/
 │   └── control_sd15_ini.ckpt
 ├── checkpoints/
 │   ├── My-Checkpoint(ours_new).ckpt
-│   ├── generatorTrain_epoch_5.pth
+│   ├── generatorTrain_epoch_10.pth
 │   └── main-epoch=00-step=7000.ckpt
 └── empty_embedding.pkl
 ```

@@ -303,7 +303,7 @@ class ControlNet(nn.Module):
     
     def add_prior(self):
         self.prior_conv = PriorConv2d('W', k=3, scale=0.0)
-        state_dict=torch.load('./checkpoints/generatorTrain_epoch_5.pth')
+        state_dict=torch.load('./checkpoints/generatorTrain_epoch_10.pth')
         # for key in state_dict:
         #     state_dict[key] = state_dict[key].to(dtype=torch.float32)
         self.prior_conv.extract_net.load_state_dict(state_dict)
