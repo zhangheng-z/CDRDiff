@@ -1,0 +1,24 @@
+name: cdrdiff
+
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - cudatoolkit=11.3
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - numpy=1.23.1
+  - pip:
+      - opencv-contrib-python==4.3.0.36
+      - pytorch-lightning==1.6.5
+      - omegaconf==2.1.1
+      - einops==0.3.0
+      - transformers==4.19.2
+      - open_clip_torch==2.0.2
+      - torchmetrics==0.6.0
+      - safetensors==0.2.7
+      - scikit-image==0.19.3
+      - scipy==1.9.3
+      - lpips==0.1.4
